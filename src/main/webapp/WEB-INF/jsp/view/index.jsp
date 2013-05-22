@@ -10,7 +10,7 @@
     <link href="${ contextPath }/css/main.css" rel="stylesheet" type="text/css">
     <link href="${ contextPath }/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="${ contextPath }/js/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="${ contextPath }/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="${ contextPath }/js/jquery-ui-1.10.3.custom.js"></script>
     <script type="text/javascript" src="${ contextPath }/js/index_page.js"></script>
 
     <script type="text/javascript">
@@ -165,7 +165,7 @@
                         <input type="hidden" name="userRole.roleId" value="1">
                         <div style="margin:20px 0 0 35px">
                             <input type="image" src="${ contextPath }/images/dl.jpg" onclick="this.form.submit()">
-                            <a href="${ contextPath }/user/registerpage.html?" id="userRegisterLink"><img src="${ contextPath }/images/zc.jpg"></a>
+                            <a href="${ contextPath }/user/registerpage.html" id="userRegisterLink"><img src="${ contextPath }/images/zc.jpg"></a>
                         </div>
                     </form>
                 </div>

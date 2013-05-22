@@ -90,10 +90,9 @@ public class UserController {
 		userLogin.setUsrePass(password);
 		userLogin.setUserStatu(1);
 		
-		UserRole userRole = new UserRole();
-		userRole.setRoleId(1);
+		UserRole userRole = userService.getPersonalUserRole();
 		userLogin.setUserRole(userRole);
-		
+
 		this.userService.userRegister(userLogin);
 		
 		//将用户信息放入session中

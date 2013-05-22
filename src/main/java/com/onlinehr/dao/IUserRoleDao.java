@@ -41,4 +41,6 @@ public interface IUserRoleDao {
 	 * @param userRole
 	 */
 	public void updateUserRole(UserRole userRole);
+
+    public final int PERSONALUSERROLEID = 1;
 }

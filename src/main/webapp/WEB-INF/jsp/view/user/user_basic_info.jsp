@@ -6,11 +6,19 @@
   <head>
     <base href="${ contextPath }">
     <title>个人用户--创建简历--基本信息</title>
-    <link href="${ contextPath }/css/main.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="${ contextPath }/js/jquery-1.4.2.min.js"></script>
+    <link href="${ contextPath }/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="${ contextPath }/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="${ contextPath }/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="${ contextPath }/js/jquery-ui-1.10.3.custom.js"></script>
     <script type="text/javascript" src="${ contextPath }/js/date_js/WdatePicker.js"></script>
     <script type="text/javascript" src="${ contextPath }/js/region_js/hukou_pro_city.js"></script>
     <script type="text/javascript" src="${ contextPath }/js/region_js/juzhu_pro_city.js"></script>
+
+      <script type="text/javascript">
+          $(document).ready(function(){
+             $("#tabs").tabs({event:"mouseover"});
+          });
+      </script>
   </head>
   
   <body>
@@ -19,6 +27,24 @@
 		<jsp:include page="/publicView/header.jsp"></jsp:include>
     </div>
     <!--头部end-->
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab-1">Nunc tincidunt</a></li>
+            <li><a href="#tab-2">Proin dolor</a></li>
+            <li><a href="#tab-3">Aenean lacinia</a></li>
+        </ul>
+
+        <div id="tab-1">
+            <p>It's first test</p>
+        </div>
+        <div id="tab-2">
+            <p>It's second test</p>
+        </div>
+        <div id="tab-3">
+            <p>It's third test</p>
+        </div>
+    </div>
+
 <div class="baseinfo" style="margin:10px auto 220px">
   <form action="${ contextPath }/user/inputbasicinfo.html" method="post" enctype="multipart/form-data">
     <table align="center" border="1" cellpadding="0" cellspacing="0" width="750">

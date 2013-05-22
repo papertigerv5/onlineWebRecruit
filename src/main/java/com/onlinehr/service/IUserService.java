@@ -2,6 +2,7 @@ package com.onlinehr.service;
 
 import com.onlinehr.domain.PersonalUser;
 import com.onlinehr.domain.UserLogin;
+import com.onlinehr.domain.UserRole;
 
 /**
  * 个人用户信息操作
@@ -9,6 +10,14 @@ import com.onlinehr.domain.UserLogin;
  *
  */
 public interface IUserService {
+
+
+    /**
+     *获取个人用户的角色信息
+     * @return
+     */
+    public UserRole getPersonalUserRole();
+
 	/**
 	 * 用户注册
 	 * @param userLogin

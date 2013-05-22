@@ -1,5 +1,7 @@
 package com.onlinehr.service.impl;
 
+import com.onlinehr.dao.IUserRoleDao;
+import com.onlinehr.domain.UserRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -28,7 +30,11 @@ public class UserServiceImpl implements IUserService {
 	@Autowired
 	@Qualifier(value="personalUserDao")
 	private IPersonalUserDao personalUserDao;
-	
+
+
+    @Autowired
+    @Qualifier(value="userRoleDao")
+    private IUserRoleDao userRoleDao;
 	/**
 	 * 判断帐号是否已被使用
 	 */
@@ -80,5 +86,10 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public void updateUserBasicInfo(PersonalUser personalUser) {
 		this.personalUserDao.updateUserBasicInfo(personalUser);
-	}	
+	}
+
+    @Override
+    public UserRole getPersonalUserRole() {
+        return this.userRoleDao.getUserRoleById(IUserRoleDao.PERSONALUSERROLEID);
+    }
 }
