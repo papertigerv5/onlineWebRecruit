@@ -1,0 +1,131 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{margin:0; padding:0}
+body{font-size:12px; font-family:\5b8b\4f53,Arial, Helvetica, sans-serif; background:#fff; line-height:150%}
+table{border-collapse:collapse; border-spacing:0}
+fieldset, img{border:0}
+legend{display:none}
+address, caption, cite, code, dfn, em, strong, th, var{font-style:normal; font-weight:normal}
+ol, ul{list-style:none}
+caption, th{text-align:left}
+h1, h2, h3, h4, h5, h6{font-size:100%; font-weight:normal}
+q:before, q:after{content:''}
+abbr, acronym{border:0}
+a:link, a:visited{color:#000000; text-decoration:none}
+a:hover{color:#C00; text-decoration:underline}
+.clear{clear:both; height:0; overflow:hidden;}
+
+
+
+.wrap{width:980px; height:auto; overflow:hidden; margin:0 auto}
+/*头部*/
+.header{height:80px; margin-bottom:10px}
+.header .logo{float:left}
+.header .subTitle{float:right;margin-right:40px; padding-top: 50px; font-size: 12pt;}
+.header .nav{width:434px; height:80px; background:url(../images/zpw_04.jpg) no-repeat; float:left}
+.header .nav ul{padding:20px 0 0 5px; overflow:hidden; zoom:1}
+.header .nav li{float:left; color:#A2DEFF; padding:3px 8px; overflow:hidden;}
+.header .nav a, .header .nav a:hover{color:#FFFFFF}
+.header .ad{float:none; overflow:hidden; width:334px; height:80px}
+
+#imgnv{position:absolute;Top:0px;left:0px}
+#imgnv div.on,#imgnv div.off{display:inline;float:left;margin-right:1px;width:20px;height:15px;line-height:15px;font-size:9px;text-align:center;cursor:pointer;cursor:hand}
+#imgnv div.on{background:#CE0609;color:#FFF;font-weight:bold}
+#imgnv div.off{background:#323232;color:#FFF;text-decoration:none}
+#titnv{margin-bottom:3px;color:#000}
+
+.header .nav2 {clear: both; margin: 0px; padding: 0px; font-size: 9pt;}
+.header .nav2 ul {float: left; margin: 0px; padding: 0px; border-top: solid 1px rgb(54,83,151); border-bottom: solid 1px rgb(54,83,151); background-color: rgb(127,162,202); font-weight: bold;}
+.header .nav2 li {display: inline; list-style: none; margin:0px; padding: 0px;}
+.header .nav2 li a {width:78px;display: block; float:left; margin: 0px ; padding: 5px 9px 5px 10px; border-right: solid 1px rgb(54,83,151); color: rgb(255,255,255); text-transform: uppercase; text-decoration: none; font-size: 100%; text-align:center;}
+.header .nav2 a:hover, .nav2 a.selected {color: rgb(50,50,50); text-decoration: none;}
+
+
+/*首页左侧*/
+.col-side{width:205px; height:auto; float:left}
+.col-side .col-sub{height:auto; background:#C4D9DF; padding:10px 0}
+.col-side .col-sub .ad{width:205px; text-align:center; margin-bottom:10px}
+.col-side .col-sub .tt-zczx{width:184px; height:25px; background:url(../images/band.png) repeat-x; margin:0 auto; overflow:hidden; line-height: 25px;}
+.col-side .col-sub .zczx{width:182px; height:273px; border:1px solid #7C7C7C; border-top:none; background:#FFFFFF; margin:0 auto 10px; position:relative}
+.col-side .col-sub .zczx .more{position:absolute; bottom:10px; right:10px}
+.col-side .col-sub .zczx .more a, .col-side .col-sub .zczx .more a:hover{color:#315D7F}
+.col-side .col-sub .zczx li{margin: 0 15px 10px}
+.col-side .col-sub .title{font-family: serif; font-size: 13pt;}
+
+
+/*登录框*/
+.login-box{width:205px; height:170px; margin-bottom:10px; background:url(../images/loginbg.jpg) no-repeat}
+.login-box ul{padding:10px 0 0 30px}
+.login-box li{float:left; font-weight:bold; color:#25527F; margin:0 5px}
+.login-box li a, .login-box li a:hover{color:#25527F}
+.login-box .input-text{width:100px;height: 21px}
+.login-box .input-btn{float:left;width:61px; height:34px; background:url(../images/dl.jpg) no-repeat; border:none; cursor:pointer; margin:0 8px 0 26px}
+.login-box .register-btn{float:left;width:61px; height:34px; background:url(../images/zc.jpg) no-repeat; border:none; cursor:pointer; margin:0 0 0 10px}
+.login-box p{margin:10px 0 0 15px}
+
+/*首页中部*/
+.col-main{width:579px; float:left; margin-top: 1px; margin-left: 15px}
+
+.seo{width:433px; height:170px; float:left; margin-bottom:10px;}
+.seo-tt{width:433px; height:33px; background:url(../images/zpw_11.jpg) no-repeat}
+.seo-list{width:433px; height:137px; background:url(../images/zpw_15.jpg) no-repeat}
+
+.hot{width:195px; height:183px; float:left; margin-bottom:10px;}
+.hot-tt{width:195px; height:33px; background:url(../images/zpw_13.jpg) no-repeat;}
+.hot-tt .more{float:right;margin:8px 10px 0 0}
+.hot-tt .more a, .more a:hover{color:#ebcc87}
+.hot-post-tt .more{float:right;margin:10px 10px 0 0}
+.hot-post-tt .more a, .more a:hover{color:#bb9b70}
+.hot-list{width:195px; height:159px; background:#0A476A; overflow:hidden}
+.hot-bottom{width:195px; height:0px; background:url(../images/zpw_17.jpg) no-repeat}
+
+.friendlink p{margin: 0px 0px 0.5em 0px;     padding: 0px;     line-height: 1.3em;     font-family: arial, sans serif;     font-size: 120%;}
+.friendlink p img {width: 550px}
+
+#tabs .leftFloatItem{float:left}
+#leftMenu {width:175px;padding-top:10px}
+
+
+/*首页右侧*/
+.col-right-side{width:195px; height: 255px; float: left; margin-top: 1px; margin-left: -15px}
+.col-right-side .tt-zczx{width:195px; height:25px; background:url(../images/band.png) repeat-x; margin:0 auto; overflow:hidden; line-height: 25px;}
+.col-right-side .container{ width: 193px; height: 100%; border: 1px solid #CEE3EF;}
+
+
+
+.v-box{width:549px; height:291px; margin-bottom:10px; overflow:hidden; border-right: 1px solid #CEE3EF}
+.v-box-tt{width:549px; height:44px; overflow:hidden}
+.v-box-tt-qysp{background:url(../images/zpw_21.jpg) no-repeat}
+.v-box-tt .more{float:right;margin:15px 10px 0 0}
+.v-box-tt .more a, .more a:hover{color:#ad8d62}
+.v-box-tt-spjl{background:url(../images/zpw_32.jpg) no-repeat}
+.v-box-list{width:549px; height:247px; background:url(../images/zpw_25.jpg) no-repeat;}
+
+.hot-post{width:549px; height:241px; overflow:hidden; border-right: 1px solid #CEE3EF}
+.hot-post-tt{width:549px; height:36px; background:url(../images/zpw_37.jpg) no-repeat; overflow:hidden}
+.hot-post-list{width:549px; height:204px; background:#FFFFFF; border:1px solid #CEE3EF; border-top:none}
+
+/*二级页面*/
+.sec-left{ width:650px; height:auto; float:left}
+
+.messagebox{width:650px; height:170px; margin-bottom:10px }
+.messagebox-tt{width:650px; height:33px; background:url(../images/pd_03.jpg) no-repeat;}
+.messagebox-list{width:650px; height:637px; background:#ebf9fd;  border:1px solid #8FC4E3; overflow:hidden; margin-bottom:10px }
+
+.sec{width:319px; height:auto; float:right; margin-bottom:10px }
+.sec-tt{width:319px; height:33px; background:url(../images/pd_05.jpg) no-repeat;}
+.sec-list{width:319px; height:133px; background:#0A476A; overflow:hidden}
+.sec-bottom{width:319px; height:4px; background:url(../images/zpw_17.jpg) no-repeat}
+
+/*底部*/
+.footer { width:960px; overflow:hidden; margin:0 auto; padding:20px 0; text-align:center; clear:both; font-size:12px; line-height:150%; color:#8AA7BE}
+.footer a:link, .footer a:visited{color:#2F658F; text-decoration:none}
+.footer a:hover{color:#2F658F; text-decoration:underline}
+.footer_about{position:relative; height: 26px;margin: 0;border: none;background: none;text-align:center; overflow:hidden; }
+.footer_about .about { float:left; position:relative; left:50%; list-style:none; text-align:center; }
+.footer_about .about li { position:relative; right:50%; float:left; padding:0 10px; line-height:15px; height:14px; margin-top:6px; cursor:pointer; border-right:1px #ccc solid; }
+.footer_about .about li a { line-height:15px; }
+.footer_about .about li.last { border:none; }
+
+
+
+

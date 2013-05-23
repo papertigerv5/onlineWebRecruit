@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="ThinkPHP启动成功欢迎页" />
+		<title>搜索页面</title>
+		<style type="text/css">
+body {
+	font-family: simsun;
+	font-size: 12px;
+}
+.main {
+    margin: 15px auto;
+    width: 990px;
+}
+.search {
+    background: url("images/search_middlebg.png") repeat-x scroll center top #3F7DD5;
+    border-left: 1px solid #3E7CD4;
+    border-right: 1px solid #3E7CD4;
+}
+
+
+</style>
+<link type="text/css" rel="stylesheet" href="css/pop.css" />
+<link type="text/css" rel="stylesheet" href="css/job_search.css" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#moreoption").hide();
+$(".slideUp>a").click(function(){
+if($("#moreoption").hasClass("now")){
+//$("#moreoption").css("display","none");
+$("#moreoption").slideUp(500);
+$("#moreoption").removeClass("now");
+$(this).addClass("down");
+$(this).html("查看更多选项");
+}else{
+//$("#moreoption").css("display","block");
+$("#moreoption").slideDown(500);
+$("#moreoption").addClass("now");
+$(this).removeClass("down");
+$(this).html("收起");
+}
+});
+
+
+$(".sPopupDiv").css("display","none");
+
+function popup(idobj,classobj){
+var dheight=$(document.body).outerHeight(true)+"px";
+var dwidth=$(document.body).outerWidth(true)+"px";
+$(".divMask").css({"width":dwidth,"height":dheight,"visibility":"visible"});
+var offset=idobj.offset();
+var height=27;
+var top=offset.top+27+"px";
+var left=offset.left+"px";
+classobj.show().css({"top":top,"left":left,"visibility":"visible"});
+}
+function popdown(){
+$(".sPopupDiv").css("display","none");
+$(".divMask").css({"width":"0px","height":"0px","visibility":"hidden"});
+}
+
+$("#buttonSelWorkingTime").click(function(){
+popup($(this),$(".buttonSelWorkingTime"));
+});
+$("#buttonSelDegree").click(function(){
+popup($(this),$(".buttonSelDegree"));
+});
+
+$("#buttonSelComptype").click(function(){
+popup($(this),$(".buttonSelComptype"));
+});
+
+$("#buttonSelCompsize").click(function(){
+popup($(this),$(".buttonSelCompsize"));
+});
+
+$(".closeButton").click(function(){
+popdown();
+});
+$(".buttonSelWorkingTime .orgButton").click(function(){
+var obj1=$(".buttonSelWorkingTime .sPopupBlock .paddingDiv input:checkbox:checked");
+var obj2=$("#buttonSelWorkingTime");
+getvalue(obj1,obj2);
+});
+$(".buttonSelDegree .orgButton").click(function(){
+var obj1=$(".buttonSelDegree .sPopupBlock .paddingDiv input:checkbox:checked");
+var obj2=$("#buttonSelDegree");
+getvalue(obj1,obj2);
+});
+
+$(".buttonSelComptype .orgButton").click(function(){
+var obj1=$(".buttonSelComptype .sPopupBlock .paddingDiv input:checkbox:checked");
+var obj2=$("#buttonSelComptype");
+getvalue(obj1,obj2);
+});
+
+$(".buttonSelCompsize .orgButton").click(function(){
+var obj1=$(".buttonSelCompsize .sPopupBlock .paddingDiv input:checkbox:checked");
+var obj2=$("#buttonSelCompsize");
+getvalue(obj1,obj2);
+});
+function getvalue(obj1,obj2){
+var str="";
+obj1.each(function(){
+ str+=$(this).attr("iname");
+ str+="+";
+});
+if(str!=""){
+obj2.val(str);
+}else{
+obj2.val("不限");
+}
+popdown();
+}
+
+
+})
+
+
+</script>
+	</head>
+	<body>
+	<div class="main">
+	<div class="Search-box">
+		<div class="Search-boxtop"></div>
+		<div class="search">
+			<div id="funSearch">
+				<div id="searchForm">
+					<form onsubmit="return zlzp.searchjob.gotoSearch_t()" action="/Jobs/searchresult.ashx" method="get" name="frmSearch">
+					<input type="hidden" value="1" name="page">
+					<input type="hidden" value="" id="SchJobType" name="SchJobType">
+					<input type="hidden" value="" name="subJobtype">
+					<input type="hidden" value="530" name="Location">
+					<input type="hidden" value="" name="industry">
+					<input type="hidden" id="PublishDate" value="" name="PublishDate">
+					<input type="hidden" value="" name="WorkingExp">
+					<input type="hidden" value="" name="EduLevel">
+					<input type="hidden" value="" name="CompanyType">
+					<input type="hidden" value="" name="CompanySize">
+					<input type="hidden" value="" name="MarkCity">
+					<input type="hidden" value="" name="LandMark">
+					<input type="hidden" value="1" id="kt" name="keywordtype">
+					<input type="hidden" value="" name="sortby">
+					<input type="hidden" value="0" name="SearchModel">
+					<input type="hidden" value="jobsearch" name="ref">
+					<input type="hidden" value="" name="f_kw">
+					<input type="hidden" value="" id="isadv">
+					<div class="industry">
+						<span>职位类别</span>
+						<input type="button" title="选择职位" value="选择职位" name="buttonSelJobType" id="buttonSelJobType">
+					</div>
+					<div class="job">
+						<span>行业类别</span>
+						<input type="button" title="选择行业" value="选择行业" name="buttonSelIndustry" id="buttonSelIndustry">
+					</div>
+					<div class="time">
+						<span>发布时间</span>
+						<select id="Release-time">
+							<option value="">所有时间</option>
+                            <option value="1">今天</option>
+                            <option value="3">最近三天</option>
+                            <option value="7">最近一周</option>
+                            <option value="30">最近一个月</option>
+						</select>
+					</div>
+					<div class="keyword">
+						<span class="keyword-tab"><a class="current" href="#">全文</a><a href="#">公司名</a><a href="#">职位名</a></span>
+						<input type="text" value="请输入关键词,例如:JAVA,销售代表,行政助理等" iskeyword="1" ktype="0" submitform="1" xhrstyle="k" xhrasp="http://sou.zhaopin.com/jobs/ajax/ajax_keywords.aspx" sjmodule="AutoComplete" maxlength="100" id="KeyWord_kw2" name="KeyWord"></div>
+					<div class="city2">
+						<span>工作地点</span>
+						<input type="text" value="选择城市" name="JobLocation" id="JobLocation" title="北京"><input type="button" name="buttonSelCity" id="buttonSelCity" class="search-citybtn">
+					</div>
+					<div class="hot-keyword">
+						<em>热门关键字：</em><a href="javascript:zlapply.searchjob.hotKeywords('java',document.frmSearch2,'searchresult.ashx')">java</a>|<a href="javascript:zlapply.searchjob.hotKeywords('.net',document.frmSearch2,'searchresult.ashx')">.net</a>|<a href="javascript:zlapply.searchjob.hotKeywords('PHP',document.frmSearch2,'searchresult.ashx')">PHP</a>|<a href="javascript:zlapply.searchjob.hotKeywords('Android',document.frmSearch2,'searchresult.ashx')">Android</a>|<a href="javascript:zlapply.searchjob.hotKeywords('财务',document.frmSearch2,'searchresult.ashx')">财务</a>|<a href="javascript:zlapply.searchjob.hotKeywords('测试',document.frmSearch2,'searchresult.ashx')">测试</a>|<a href="javascript:zlapply.searchjob.hotKeywords('销售',document.frmSearch2,'searchresult.ashx')">销售</a>|<a href="javascript:zlapply.searchjob.hotKeywords('翻译',document.frmSearch2,'searchresult.ashx')">翻译</a>|<a href="javascript:zlapply.searchjob.hotKeywords('广告',document.frmSearch2,'searchresult.ashx')">广告</a>|<a href="javascript:zlapply.searchjob.hotKeywords('客服',document.frmSearch2,'searchresult.ashx')">客服</a>|<a href="javascript:zlapply.searchjob.hotKeywords('人力资源',document.frmSearch2,'searchresult.ashx')">人力资源</a>|<a href="javascript:zlapply.searchjob.hotKeywords('设计',document.frmSearch2,'searchresult.ashx')">设计</a>
+					</div>
+					<div  id="moreoption">
+						<div class="workingtime">
+							<span>工作经验</span>
+							<input type="button" title="不限" value="不限" name="buttonSelWorkingTime" id="buttonSelWorkingTime">
+						</div>
+
+						<div class="degree"><span>学历要求</span>
+							<input type="button" title="不限" value="不限" name="buttonSelDegree" id="buttonSelDegree">
+						</div>
+						<div class="Salary-range">
+							<span>月薪范围</span>
+							<select name="SchSalaryFromAdv"><option value="0">0</option>
+							<option value="1000">1000</option>
+							<option value="1500">1500</option>
+							<option value="2000">2000</option>
+							<option value="3000">3000</option>
+							<option value="4000">4000</option>
+							<option value="5000">5000</option>
+							<option value="6000">6000</option>
+							<option value="8000">8000</option>
+							<option value="10000">10000</option>
+							<option value="15000">15000</option>
+							<option value="20000">20000</option>
+							<option value="30000">30000</option>
+							<option value="50000">50000</option>
+                            </select>&nbsp;到&nbsp;
+                            <select name="SchSalaryToAdv"> <option value="">－不限－</option>
+							<option value="1000">1000</option>
+							<option value="1500">1500</option>
+							<option value="2000">2000</option>
+							<option value="3000">3000</option>
+							<option value="4000">4000</option>
+							<option value="5000">5000</option>
+							<option value="6000">6000</option>
+							<option value="8000">8000</option>
+							<option value="10000">10000</option>
+							<option value="15000">15000</option>
+							<option value="20000">20000</option>
+							<option value="30000">30000</option>
+							<option value="50000">50000</option>
+                            </select>(人民币)
+						</div>
+						<div class="comptype"><span>公司性质</span>
+							<input type="button" title="不限" value="不限" name="buttonSelComptype" id="buttonSelComptype">
+						</div>
+
+						<div class="compsize"><span>公司规模</span>
+							<input type="button" title="不限" value="不限" name="buttonSelCompsize" id="buttonSelCompsize">
+						</div>
+						
+						<div class="job-category">
+							<span>职位类型</span>
+							<label class="category"><input type="checkbox" checked="" value="2" name="EmplType">全职</label>
+							<label class="category"><input type="checkbox" checked="" value="1" name="EmplType">兼职</label>
+							<label class="category"><input type="checkbox" checked="" value="4" name="EmplType">实习</label>
+						</div>
+					</div>
+					<div class="returnback"><a href="javascript:void(0)" id="reset">重置</a></div>
+					<div class="slideUp"><a class="down" href="javascript:void(0)">更多搜索条件</a></div>
+					<div class="searchbtn">
+						<button onclick="return submitfrom();" type="submit" class="doesSearch"></button>
+						<a href="/jobs/mapsearch.ashx">地图搜索&gt;</a>
+					</div>
+					<dl class="clearfix"></dl>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<div class="Search-boxbottom"></div>
+	</div>
+	<!-- popup -->
+	<div style="width: 275px; " class="sPopupDiv buttonSelWorkingTime"><div class="student_tips" style="left: 120px; "></div><div class="sPopupTitle290"><h1>选择工作经验</h1><div class="sButtonBlock"><a class="orgButton" href="#" onclick="return zlzp.PopupDiv.allIns['buttonSelWorkingTime'].fnClickOk()">确定</a> <a class="blueButton" href="#" onclick="return zlzp.PopupDiv.allIns['buttonSelWorkingTime'].fnClickAll()">不限</a> <a class="closeButton" href="#" onclick="return zlzp.PopupDiv.allIns['buttonSelWorkingTime'].fnClickClose()"></a></div><div class="clear"></div></div><div class="clear"></div><div class="sPopupBlock"><div class="paddingDiv"><table class="chebox" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td width="50%" class="mOutItem" onmouseover="zlzp.PopupDiv.fnMOver(this)" onmouseout="zlzp.PopupDiv.fnMOut(this)"><label for="c_buttonSelWorkingTime_0000" class="noselItem"><input type="checkbox" name="c_buttonSelWorkingTime" id="c_buttonSelWorkingTime_0000" value="0000" iname="无经验" onclick="zlzp.PopupDiv.allIns['buttonSelWorkingTime'].fnClickChebox(this)">无经验</label></td><td width="50%" class="mOutItem" onmouseover="zlzp.PopupDiv.fnMOver(this)" onmouseout="zlzp.PopupDiv.fnMOut(this)"><label for="c_buttonSelWorkingTime_0001" class="noselItem"><input type="checkbox" name="c_buttonSelWorkingTime" id="c_buttonSelWorkingTime_0001" value="0001" iname="1年以下" onclick="zlzp.PopupDiv.allIns['buttonSelWorkingTime'].fnClickChebox(this)">1年以下</label></td></tr><tr><td width="50%" class="mOutItem" onmouseover="zlzp.PopupDiv.fnMOver(this)" onmouseout="zlzp.PopupDiv.fnMOut(this)"><label for="c_buttonSelWorkingTime_0103" class="noselItem"><input type="checkbox" name="c_buttonSelWorkingTime" id="c_buttonSelWorkingTime_0103" value="0103" iname="1-3年" onclick="zlzp.PopupDiv.allIns['buttonSelWorkingTime'].fnClickChebox(this)">1-3年</label></td><td width="50%" class="mOutItem" onmouseover="zlzp.PopupDiv.fnMOver(this)" onmouseout="zlzp.PopupDiv.fnMOut(this)"><label for="c_buttonSelWorkingTime_0305" class="noselItem"><input type="checkbox" name="c_buttonSelWorkingTime" id="c_buttonSelWorkingTime_0305" value="0305" iname="3-5年" onclick="zlzp.PopupDiv.allIns['buttonSelWorkingTime'].fnClickChebox(this)">3-5年</label></td></tr><tr><td width="50%" class="mOutItem" onmouseover="zlzp.PopupDiv.fnMOver(this)" onmouseout="zlzp.PopupDiv.fnMOut(this)"><label for="c_buttonSelWorkingTime_0510" class="noselItem"><input type="checkbox" name="c_buttonSelWorkingTime" id="c_buttonSelWorkingTime_0510" value="0510" iname="5-10年" onclick="zlzp.PopupDiv.allIns['buttonSelWorkingTime'].fnClickChebox(this)">5-10年</label></td><td width="50%" class="mOutItem" onmouseover="zlzp.PopupDiv.fnMOver(this)" onmouseout="zlzp.PopupDiv.fnMOut(this)"><label for="c_buttonSelWorkingTime_1099" class="noselItem"><input type="checkbox" name="c_buttonSelWorkingTime" id="c_buttonSelWorkingTime_1099" value="1099" iname="10年以上" onclick="zlzp.PopupDiv.allIns['buttonSelWorkingTime'].fnClickChebox(this)">10年以上</label></td></tr></tbody></table></div></div></div>
+<div style="width: 275px;" class="sPopupDiv buttonSelDegree"><div class="student_tips" style="left: 120px;"></div><div class="sPopupTitle290"><h1>选择学历要求</h1><div class="sButtonBlock"><a onclick="return zlzp.PopupDiv.allIns['buttonSelDegree'].fnClickOk()" href="#" class="orgButton">确定</a> <a onclick="return zlzp.PopupDiv.allIns['buttonSelDegree'].fnClickAll()" href="#" class="blueButton">不限</a> <a onclick="return zlzp.PopupDiv.allIns['buttonSelDegree'].fnClickClose()" href="#" class="closeButton"></a></div><div class="clear"></div></div><div class="clear"></div><div class="sPopupBlock"><div class="paddingDiv"><table cellspacing="0" cellpadding="0" border="0" class="chebox"><tbody><tr><td width="100%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelDegree_-1"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelDegree'].fnClickChebox(this)" iname="无" value="-1" id="c_buttonSelDegree_-1" name="c_buttonSelDegree">无</label></td></tr><tr><td width="100%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelDegree_7"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelDegree'].fnClickChebox(this)" iname="高中/中专/中技及以下" value="7" id="c_buttonSelDegree_7" name="c_buttonSelDegree">高中/中专/中技及以下</label></td></tr><tr><td width="100%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelDegree_5"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelDegree'].fnClickChebox(this)" iname="大专及同等学历" value="5" id="c_buttonSelDegree_5" name="c_buttonSelDegree">大专及同等学历</label></td></tr><tr><td width="100%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelDegree_4"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelDegree'].fnClickChebox(this)" iname="本科/学士及等同学历" value="4" id="c_buttonSelDegree_4" name="c_buttonSelDegree">本科/学士及等同学历</label></td></tr><tr><td width="100%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelDegree_3"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelDegree'].fnClickChebox(this)" iname="硕士/研究生及等同学历" value="3" id="c_buttonSelDegree_3" name="c_buttonSelDegree">硕士/研究生及等同学历</label></td></tr><tr><td width="100%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelDegree_1"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelDegree'].fnClickChebox(this)" iname="博士及以上" value="1" id="c_buttonSelDegree_1" name="c_buttonSelDegree">博士及以上</label></td></tr><tr><td width="100%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelDegree_8"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelDegree'].fnClickChebox(this)" iname="其他" value="8" id="c_buttonSelDegree_8" name="c_buttonSelDegree">其他</label></td></tr></tbody></table></div></div></div>
+	<div style="width: 275px;" class="sPopupDiv buttonSelComptype"><div class="student_tips" style="left: 120px;"></div><div class="sPopupTitle290"><h1>选择公司性质</h1><div class="sButtonBlock"><a onclick="return zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickOk()" href="#" class="orgButton">确定</a> <a onclick="return zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickAll()" href="#" class="blueButton">不限</a> <a onclick="return zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickClose()" href="#" class="closeButton"></a></div><div class="clear"></div></div><div class="clear"></div><div class="sPopupBlock"><div class="paddingDiv"><table cellspacing="0" cellpadding="0" border="0" class="chebox"><tbody><tr><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelComptype_1"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickChebox(this)" iname="国企" value="1" id="c_buttonSelComptype_1" name="c_buttonSelComptype">国企</label></td><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelComptype_5"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickChebox(this)" iname="民营" value="5" id="c_buttonSelComptype_5" name="c_buttonSelComptype">民营</label></td></tr><tr><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelComptype_4"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickChebox(this)" iname="合资" value="4" id="c_buttonSelComptype_4" name="c_buttonSelComptype">合资</label></td><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelComptype_2"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickChebox(this)" iname="外商独资" value="2" id="c_buttonSelComptype_2" name="c_buttonSelComptype">外商独资</label></td></tr><tr><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelComptype_8"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickChebox(this)" iname="股份制企业" value="8" id="c_buttonSelComptype_8" name="c_buttonSelComptype">股份制企业</label></td><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelComptype_9"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickChebox(this)" iname="上市公司" value="9" id="c_buttonSelComptype_9" name="c_buttonSelComptype">上市公司</label></td></tr><tr><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelComptype_3"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickChebox(this)" iname="代表处" value="3" id="c_buttonSelComptype_3" name="c_buttonSelComptype">代表处</label></td><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelComptype_6"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickChebox(this)" iname="国家机关" value="6" id="c_buttonSelComptype_6" name="c_buttonSelComptype">国家机关</label></td></tr><tr><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelComptype_10"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickChebox(this)" iname="事业单位" value="10" id="c_buttonSelComptype_10" name="c_buttonSelComptype">事业单位</label></td><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelComptype_7"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelComptype'].fnClickChebox(this)" iname="其它" value="7" id="c_buttonSelComptype_7" name="c_buttonSelComptype">其它</label></td></tr></tbody></table></div></div></div>
+	<div style="width: 275px; " class="sPopupDiv buttonSelCompsize"><div class="student_tips" style="left: 120px;"></div><div class="sPopupTitle290"><h1>选择公司规模</h1><div class="sButtonBlock"><a onclick="return zlzp.PopupDiv.allIns['buttonSelCompsize'].fnClickOk()" href="#" class="orgButton">确定</a> <a onclick="return zlzp.PopupDiv.allIns['buttonSelCompsize'].fnClickAll()" href="#" class="blueButton">不限</a> <a onclick="return zlzp.PopupDiv.allIns['buttonSelCompsize'].fnClickClose()" href="#" class="closeButton"></a></div><div class="clear"></div></div><div class="clear"></div><div class="sPopupBlock"><div class="paddingDiv"><table cellspacing="0" cellpadding="0" border="0" class="chebox"><tbody><tr><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelCompsize_1"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelCompsize'].fnClickChebox(this)" iname="20人以下" value="1" id="c_buttonSelCompsize_1" name="c_buttonSelCompsize">20人以下</label></td><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelCompsize_2"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelCompsize'].fnClickChebox(this)" iname="20-99人" value="2" id="c_buttonSelCompsize_2" name="c_buttonSelCompsize">20-99人</label></td></tr><tr><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelCompsize_3"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelCompsize'].fnClickChebox(this)" iname="100-499人" value="3" id="c_buttonSelCompsize_3" name="c_buttonSelCompsize">100-499人</label></td><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelCompsize_4"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelCompsize'].fnClickChebox(this)" iname="500-999人" value="4" id="c_buttonSelCompsize_4" name="c_buttonSelCompsize">500-999人</label></td></tr><tr><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelCompsize_5"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelCompsize'].fnClickChebox(this)" iname="1000-9999人" value="5" id="c_buttonSelCompsize_5" name="c_buttonSelCompsize">1000-9999人</label></td><td width="50%" onmouseout="zlzp.PopupDiv.fnMOut(this)" onmouseover="zlzp.PopupDiv.fnMOver(this)" class="mOutItem"><label class="noselItem" for="c_buttonSelCompsize_6"><input type="checkbox" onclick="zlzp.PopupDiv.allIns['buttonSelCompsize'].fnClickChebox(this)" iname="10000人以上" value="6" id="c_buttonSelCompsize_6" name="c_buttonSelCompsize">10000人以上</label></td></tr></tbody></table></div></div></div>
+	<div class="divMask" style="opacity: 0.3; z-index: 990; left: 0px; top: 0px; visibility: hidden; width: 0px; height: 0px; "></div>
+	</div>
+	</body>
+</html>
