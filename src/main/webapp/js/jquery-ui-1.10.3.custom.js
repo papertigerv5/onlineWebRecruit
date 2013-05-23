@@ -7743,6 +7743,10 @@ $.extend(Datepicker.prototype, {
 		}
 		this._notifyChange(inst);
 		this._adjustDate(target);
+
+        //Make sure the today button is useful.
+        this._setDateDatepicker(target, new Date());
+        this._selectDate(id, this._getDateDatepicker(target));
 	},
 
 	/* Action for selecting a new month/year. */

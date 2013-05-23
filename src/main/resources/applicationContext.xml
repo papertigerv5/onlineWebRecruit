@@ -28,42 +28,13 @@
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.show_sql">true</prop>
-                <prop key="hibernate.hbm2ddl.auto">create</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
             </props>
         </property>
-        <property name="annotatedClasses">
+        <property name="packagesToScan">
             <list>
-                <value>
-                    com.onlinehr.domain.Resume
-                </value>
-                <value>
-                    com.onlinehr.domain.CompanyUser
-                </value>
-                <value>
-                    com.onlinehr.domain.Education
-                </value>
-                <value>
-                    com.onlinehr.domain.Intention
-                </value>
-                <value>
-                    com.onlinehr.domain.JobExperience
-                </value>
-                <value>
-                    com.onlinehr.domain.News
-                </value>
-                <value>
-                    com.onlinehr.domain.PersonalUser
-                </value>
-                <value>
-                    com.onlinehr.domain.PositionType
-                </value>
-                <value>
-                    com.onlinehr.domain.UserLogin
-                </value>
-                <value>
-                    com.onlinehr.domain.UserRole
-                </value>
+                <value>com.onlinehr.domain</value>
             </list>
         </property>
     </bean>

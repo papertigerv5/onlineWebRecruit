@@ -81,6 +81,10 @@ a:hover{color:#C00; text-decoration:underline}
 .friendlink p{margin: 0px 0px 0.5em 0px;     padding: 0px;     line-height: 1.3em;     font-family: arial, sans serif;     font-size: 120%;}
 .friendlink p img {width: 550px}
 
+#tabs .leftFloatItem{float:left}
+#leftMenu {width:175px;padding-top:10px}
+
+
 /*首页右侧*/
 .col-right-side{width:195px; height: 255px; float: left; margin-top: 1px; margin-left: -15px}
 .col-right-side .tt-zczx{width:195px; height:25px; background:url(../images/band.png) repeat-x; margin:0 auto; overflow:hidden; line-height: 25px;}
