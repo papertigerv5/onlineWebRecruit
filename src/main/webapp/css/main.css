@@ -81,9 +81,16 @@ a:hover{color:#C00; text-decoration:underline}
 .friendlink p{margin: 0px 0px 0.5em 0px;     padding: 0px;     line-height: 1.3em;     font-family: arial, sans serif;     font-size: 120%;}
 .friendlink p img {width: 550px}
 
-#tabs .leftFloatItem{float:left}
-#leftMenu {width:175px;padding-top:10px}
+#tabs .leftFloatItem{float:left;}
+#tabs {color: #222; font-family: tahoma, arial, "宋体";  font-size: 12px;  line-height: 1.5;}
+#tabs .tab {width:787px; border: 1px solid #C9D9E7; margin-top:13px; margin-left:16px;padding: 0px}
+#tabs .tabTitle{font-size: 14px; color: #376BA6; line-height: 28px; padding-left: 8px; font-weight: bold;  margin: 0px;}
+#tabs .tabTitleDiv{background-color:#F6FBFF}
+#leftMenu {width:157px;padding-top:10px}
+#leftMenu ul li{list-style: circle; font-size: 12px}
 
+table {color: #222;font-family: tahoma, arial, "宋体";font-size: 12px; line-height: 1.5;}
+.openDialog {cursor: hand}
 
 /*首页右侧*/
 .col-right-side{width:195px; height: 255px; float: left; margin-top: 1px; margin-left: -15px}
@@ -126,6 +133,21 @@ a:hover{color:#C00; text-decoration:underline}
 .footer_about .about li a { line-height:15px; }
 .footer_about .about li.last { border:none; }
 
+
+
+
+.text_red{color:red}
+#progressBar {border-radius: 0; height: 1em; width: 64%; float: left}
+.progress-label{color: #2e6e9e}
+
+/*竖直tab**/
+
+.ui-tabs-vertical { width: 55em; }
+.ui-tabs-vertical .ui-tabs-nav { padding: .1em .1em .1em .1em; float: right; width: 8em; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-left-width: 0 !important; margin: 0 0 .2em -1px; }
+.ui-tabs-vertical .ui-tabs-nav li a { display: block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected { padding-bottom: 0; padding-left: .1em; border-right-width: 1px; margin-left: -2px; }
+.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
 
 
 

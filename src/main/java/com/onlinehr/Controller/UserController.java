@@ -108,7 +108,6 @@ public class UserController {
 	 * @param modelMap
 	 * @return
 	 */
-	@RequestMapping(value="/userlogin", method=RequestMethod.POST)
 	public String userLogin(HttpServletRequest request, UserLogin userLogin, ModelMap modelMap){
 		UserLogin resultUserLogin = userService.userLogin(userLogin);
 		if(resultUserLogin == null){
@@ -133,7 +132,30 @@ public class UserController {
 			}
 		}
 	}
-	
+
+    /**
+     * For stub not have to input the user name and password.
+     * @param request
+     * @param modelMap
+     * @return
+     */
+    @RequestMapping(value="/userlogin", method=RequestMethod.POST)
+    public String getUserLoginStub(HttpServletRequest request, ModelMap modelMap){
+        String userAccount = "wuyifan";
+        UserLogin userLogin = this.userService.getUserLoginByUserAccount(userAccount);
+        List<Resume> resumeList = resumeService.getResumesByAccount(userAccount);
+        modelMap.addAttribute("resumeList",resumeList);
+
+        HttpSession httpSession = request.getSession();
+        httpSession.setAttribute("userLogin",userLogin);
+
+        if(resumeList != null && !resumeList.isEmpty()){
+            return this.userMainPage;
+        }else {
+            return this.userBasicInfoPage;
+        }
+
+    }
 	
 	/**
 	 * 填写基本信息

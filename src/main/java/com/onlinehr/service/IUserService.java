@@ -56,4 +56,6 @@ public interface IUserService {
 	 * @param personalUser
 	 */
 	public void updateUserBasicInfo(PersonalUser personalUser);
+
+    public UserLogin getUserLoginByUserAccount(String userAccount);
 }

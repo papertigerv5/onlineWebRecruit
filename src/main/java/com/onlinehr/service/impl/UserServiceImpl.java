@@ -92,4 +92,9 @@ public class UserServiceImpl implements IUserService {
     public UserRole getPersonalUserRole() {
         return this.userRoleDao.getUserRoleById(IUserRoleDao.PERSONALUSERROLEID);
     }
+
+    @Override
+    public UserLogin getUserLoginByUserAccount(String userAccount) {
+        return this.userDao.getUserLoginByAccount(userAccount);
+    }
 }

@@ -6,7 +6,108 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" name="Default" comment="" />
+    <list default="true" id="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" name="Default" comment="解决hibernate无法自动建表问题，完善注册页面">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/46.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/onlineWebRecruit_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/AdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/impl/AdminServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/impl/AdminServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/listener/ApplicationInitListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/listener/ApplicationInitListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/BaseDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/BaseDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/BaseDomain.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/BaseDomain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/CompanyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/CompanyController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/CompanyUser.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/CompanyUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/CompanyUserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/CompanyUserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/impl/CompanyUserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/impl/CompanyUserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/utils/DataBase.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/utils/DataBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/Education.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/Education.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/EducationDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/EducationDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/IAdminService.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/IAdminService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/ICompanyUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/ICompanyUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/ICompanyUserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/ICompanyUserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IEducationDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IEducationDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IJobExperienceDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IJobExperienceDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/INewsDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/INewsDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/INewsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/INewsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IPersonalUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IPersonalUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IPositionTypeDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IPositionTypeDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IResumeDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IResumeDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/IResumeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/IResumeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IUserRoleDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/IUserRoleDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/IUserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/IUserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/Intention.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/Intention.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/JobExperience.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/JobExperience.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/JobExperienceDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/JobExperienceDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/News.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/News.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/NewsDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/NewsDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/impl/NewsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/impl/NewsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/common/NewsType.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/common/NewsType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/utils/Page.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/utils/Page.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/PersonalUser.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/PersonalUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/PersonalUserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/PersonalUserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/PositionType.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/PositionType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/PositionTypeDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/PositionTypeDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/common/PublicProperty.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/common/PublicProperty.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/Resume.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/Resume.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/ResumeDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/ResumeDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/impl/ResumeServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/impl/ResumeServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/UserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/UserLogin.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/UserLogin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/UserRole.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/domain/UserRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/UserRoleDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/dao/impl/UserRoleDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/onlinehr/utils/UtilTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/onlinehr/utils/UtilTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/date_js/skin/WdatePicker.css" afterPath="$PROJECT_DIR$/src/main/webapp/js/date_js/skin/WdatePicker.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/date_js/WdatePicker.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/date_js/WdatePicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/date_js/calendar.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/date_js/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/company/company_basic_info.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/company/company_basic_info.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/company/company_main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/company/company_main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/company/company_register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/company/company_register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/date_js/skin/default/datepicker.css" afterPath="$PROJECT_DIR$/src/main/webapp/js/date_js/skin/default/datepicker.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/date_js/skin/whyGreen/datepicker.css" afterPath="$PROJECT_DIR$/src/main/webapp/js/date_js/skin/whyGreen/datepicker.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/date_js/lang/en.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/date_js/lang/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/error.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/error.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/publicView/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/publicView/footer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/publicView/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/publicView/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/region_js/hukou_pro_city.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/region_js/hukou_pro_city.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/index_page.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/index_page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/job_add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/job_add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/job_list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/job_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/css/job_search.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/css/job_search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-datepicker-zh.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-datepicker-zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/redmond/jquery-ui-1.10.3.custom.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/redmond/jquery-ui-1.10.3.custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/region_js/juzhu_pro_city.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/region_js/juzhu_pro_city.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/news_add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/news_add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/news_list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/news_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/news_update.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/news_update.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/onlineWebRecruit.iml" afterPath="$PROJECT_DIR$/onlineWebRecruit.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/onlineWebRecruit_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/onlineWebRecruit_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/css/pop.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/css/pop.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/position_add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/position_add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/position_list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/position_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/position_update.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/position_update.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/second.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/second.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_basic_info.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_basic_info.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_resume_preview.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_resume_preview.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_study_experience.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_study_experience.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/date_js/lang/zh-cn.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/date_js/lang/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/date_js/lang/zh-tw.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/date_js/lang/zh-tw.js" />
+    </list>
     <ignored path="recruitWebsite.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369210588338" ignored="false" />
@@ -21,7 +122,7 @@
     <file path="/UserRoleDaoImpl.java" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369008840490" ignored="false" />
     <file path="/header.jsp" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1368685294106" ignored="false" />
     <file path="/footer.jsp" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1368753763743" ignored="false" />
-    <file path="/main.css" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369303458587" ignored="false" />
+    <file path="/main.css" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369617761059" ignored="false" />
     <file path="/imgsroll.js" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1368756537813" ignored="false" />
     <file path="/index_page.js" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1368953882570" ignored="false" />
     <file path="/UserDao.java" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369008627215" ignored="false" />
@@ -37,10 +138,12 @@
     <file path="/UserController.java" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369201684941" ignored="false" />
     <file path="/user_register.jsp" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369153252239" ignored="false" />
     <file path="/user_main.jsp" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369150628709" ignored="false" />
-    <file path="/user_basic_info.jsp" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369303606917" ignored="false" />
-    <file path="/Dummy.txt" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369303850786" ignored="false" />
+    <file path="/user_basic_info.jsp" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369632699811" ignored="false" />
+    <file path="/Dummy.txt" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369632757473" ignored="false" />
     <file path="/IUserService.java" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369201457277" ignored="false" />
     <file path="/IUserRoleDao.java" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369201636708" ignored="false" />
+    <file path="/smart_wizard_vertical.css" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369489308810" ignored="false" />
+    <file path="/a.java" changelist="2f7ed1a4-e235-4e23-bc04-d6603b9625d3" time="1369484351986" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,24 +208,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="47" selection-start="3601" selection-end="3601" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="method#saveEduAndJobMess#0;class#UserController#0" expanded="false" />
-                <element signature="method#updateUserBasicInfo#0;class#UserController#0" expanded="false" />
-                <element signature="e#9803#9877#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="user_basic_info.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_basic_info.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="34" selection-start="1883" selection-end="1883" vertical-scroll-proportion="-1.7200956">
-              <folding />
+            <state line="80" column="34" selection-start="3402" selection-end="3402" vertical-scroll-proportion="0.42542788">
+              <folding>
+                <element signature="e#1782#2555#0" expanded="false" />
+                <element signature="e#2599#3155#0" expanded="false" />
+                <element signature="e#3238#3310#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,16 +225,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="40" selection-start="4945" selection-end="4945" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0">
+            <state line="92" column="25" selection-start="5472" selection-end="5472" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,7 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_main.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlinehr/service/IUserService.java" />
@@ -183,10 +268,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/onlineWebRecruit.iml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/jquery-datepicker-zh.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/jquery-ui-1.10.3.custom.js" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/smart_wizard_vertical.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_basic_info.jsp" />
       </list>
@@ -258,6 +344,28 @@
     <option name="width" value="1452" />
     <option name="height" value="876" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Error handling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -286,7 +394,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -416,14 +523,6 @@
               <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -447,11 +546,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,11 +568,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -496,54 +587,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recruitWebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlineWebRecruit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initData" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="preferences.fileTypes" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="project.structure.side.proportion" value="0.4150289" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Idea Projects\Github Projects\onlineWebRecruit\src\main\webapp\images" />
+      <recent name="E:\Idea Projects\Github Projects\onlineWebRecruit\src\main\webapp\css" />
       <recent name="E:\Idea Projects\Github Projects\onlineWebRecruit\src\main\webapp" />
       <recent name="E:\Idea Projects\Github Projects\onlineWebRecruit\src\main\webapp\css\ui-lightness" />
       <recent name="E:\Idea Projects\Github Projects\onlineWebRecruit\src\main\webapp\js" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Idea Projects\Github Projects\onlineWebRecruit\src\main\webapp\css" />
@@ -563,6 +642,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -591,19 +683,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -765,12 +844,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48391607" sideWeight="0.5035868" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33286715" sideWeight="0.5093525" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29090908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -780,11 +858,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30935252" sideWeight="0.2055944" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.66993004" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32027972" sideWeight="0.49713057" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30935252" sideWeight="0.6797203" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2937063" sideWeight="0.4913917" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31888112" sideWeight="0.49713057" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30935252" sideWeight="0.66713285" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33286715" sideWeight="0.4856115" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.66866565" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -851,69 +930,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="59" selection-start="2034" selection-end="2043" vertical-scroll-proportion="1.840625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="46" selection-start="98" selection-end="136" vertical-scroll-proportion="0.055555556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/ui-lightness/jquery-ui-1.10.3.custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-ui-1.10.3.custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7746" column="47" selection-start="238871" selection-end="238871" vertical-scroll-proportion="0.3318182">
-          <folding>
-            <marker date="1369289742316" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1369289742316" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1369289742316" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1369289742316" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1369289742316" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1369289742316" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-datepicker-zh.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="437" selection-end="439" vertical-scroll-proportion="0.16527197">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="24" selection-start="437" selection-end="439" vertical-scroll-proportion="0.16527197" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/redmond/images/ui-icons_2e83ff_256x240.png">
@@ -946,28 +965,71 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="40" selection-start="4945" selection-end="4945" vertical-scroll-proportion="0.0">
+        <state line="91" column="61" selection-start="2970" selection-end="2970" vertical-scroll-proportion="0.8033473">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="540" selection-end="540" vertical-scroll-proportion="0.039748956">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="106" selection-start="2957" selection-end="2981" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/smart_wizard_vertical.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="13" selection-start="466" selection-end="470" vertical-scroll-proportion="0.89748955">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onlinehr/Controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="47" selection-start="3601" selection-end="3601" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#saveEduAndJobMess#0;class#UserController#0" expanded="false" />
-            <element signature="method#updateUserBasicInfo#0;class#UserController#0" expanded="false" />
-            <element signature="e#9803#9877#0" expanded="false" />
-          </folding>
+        <state line="148" column="47" selection-start="4305" selection-end="4305" vertical-scroll-proportion="0.04347826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.5857805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="38" selection-start="4523" selection-end="5548" vertical-scroll-proportion="0.5427873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="25" selection-start="5472" selection-end="5472" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/user/user_basic_info.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="34" selection-start="1883" selection-end="1883" vertical-scroll-proportion="-1.7200956">
-          <folding />
+        <state line="80" column="34" selection-start="3402" selection-end="3402" vertical-scroll-proportion="0.42542788">
+          <folding>
+            <element signature="e#1782#2555#0" expanded="false" />
+            <element signature="e#2599#3155#0" expanded="false" />
+            <element signature="e#3238#3310#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,11 +1112,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.6</last-edited>
+          <last-edited>Maven: commons-io:commons-io:1.3.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.4150289" />
               </list>
             </option>
           </splitter-proportions>
